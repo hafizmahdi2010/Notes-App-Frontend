@@ -1,0 +1,98 @@
+@media (max-width:600px) {
+  /* colors varibals */
+
+  :root {
+    --bg: #161515;
+    --se-bg: #111010;
+    --th-bg: #181717;
+    --text-bg: #3C3D41;
+    --blue-text: #485894;
+    --green-text: #00601B;
+    --profile-bg: #D9D9D9;
+  }
+
+  .mainContainer {
+    padding: 0px;
+  }
+
+  .gridContainer {
+    grid-template-columns: auto;
+    margin: 0px;
+    margin-left: 0px;
+    background-color: var(--th-bg);
+  }
+
+  .gridContainer .note {
+    height: 220px;
+    background-color: var(--se-bg);
+  }
+
+  .navbar .serachArea {
+    position: absolute;
+    width: 88vw;
+    visibility: hidden;
+  }
+
+  .navbar .serachArea.active {
+    visibility: visible;
+    z-index: 23;
+  }
+
+  .navbar .icons {
+    display: block;
+  }
+
+  .serachArea i {
+    display: block;
+  }
+
+  /* new note btn */
+  .newNoteBtn {
+    bottom: 5%;
+  }
+
+  /* profile */
+  .profile .yourNotes {
+    grid-template-columns: auto;
+  }
+
+  .profile .flex .profilePic {
+    width: 70px;
+    height: 70px;
+  }
+
+  .profile .flex {
+    gap: 15px;
+  }
+
+  .yourNotesHead {
+    margin-top: 0px;
+    flex-direction: column-reverse;
+  }
+
+  .profile .flex.al-center:first-child {
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .profile .flex.al-center {
+    margin-top: 0px;
+    align-items: flex-start;
+  }
+
+  .profile .flex .block h3 {
+    font-size: 19px;
+  }
+
+  .profile .flex .block p {
+    font-size: 13px;
+  }
+
+  .profile .flex.al-center button {
+    width: 46vw;
+  }
+
+  .formConteiner {
+    width: 95vw;
+  }
+}
